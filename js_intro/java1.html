@@ -1,0 +1,24 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Print current day</title>
+    <script>
+        function printCurrentDay() {
+            var days = ['Sunday', 'Monday','Tuesday','Wednesday','Thursday','Friday']
+            var today= new date9();
+            var currentday =days[today.getDay()];
+            console.log(currentDay);
+            document.getElementById('day').innerHTML = currentDay;
+        }
+    </script>
+
+</head>
+<body>
+    <h1>Today is <span id="day"></span>.</h1>
+    <button onclick="printCurrentDay()">Print Current Day</button>
+</body>
+</html>
